@@ -1,11 +1,12 @@
 # Document Intelligence System
 
+<img width="1294" height="905" alt="image" src="https://github.com/user-attachments/assets/87dd4b94-c686-4982-b248-131522eb6a08" />
 
-<img width="947" height="436" alt="image" src="https://github.com/user-attachments/assets/8aa67a09-ec26-4182-8ac7-c0076f8248f8" />
+
 
  [Demo Video](#-demo-video) | [Setup Guide](SETUP_GUIDE.md) | [Analysis](ANALYSIS.md)
 
-🎬 **[Watch Demo Video](https://drive.google.com/file/d/1HAGERLp_qef2R_ctPRYc3Xfqh2rFDsx2/view)**
+🎬 **[Watch Demo Video](https://drive.google.com/file/d/1TqIDk_AtmA9JMPuhd0ezldzyvbAArKv4/view?usp=sharing)**
 
 > **Enterprise-Grade Local AI for Document Classification, Extraction & Search**
 
@@ -17,6 +18,66 @@ A high-performance, modular document processing pipeline that combines **rule-ba
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
+
+## Offline Setup Guide
+Prerequisites
+Python 3.11+
+
+4GB RAM minimum
+
+2GB disk space (for cached models)
+
+Internet connection (for initial setup only)
+
+One-Time Installation (Requires Internet)
+bash
+# Step 1: Clone repository
+cd document-intelligence-system
+
+# Step 2: Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Step 3: Install dependencies
+pip install -r requirements.txt
+
+# Step 4: Download spaCy model
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+
+# Step 5: Cache transformer models (run once)
+python main.py
+ Running Completely Offline
+After the initial setup, the system works 100% offline:
+
+bash
+# Disconnect internet (optional verification step)
+# The system will now use cached models
+
+# Start the API server
+python api.py
+
+# Open browser to http://localhost:5000
+# All processing happens locally - no internet needed!
+ Model Cache Locations
+After first run, models are cached at:
+
+text
+~/.cache/torch/sentence_transformers/  # Sentence embeddings
+~/.cache/huggingface/                  # Transformers (DistilBERT)
+<venv>/lib/site-packages/en_core_web_sm/  # spaCy NER
+Offline Verification: Delete these folders and run without internet—the system will fail. Restore them and it works offline forever.
+
+ Performance Metrics
+Metric	Value	Notes
+First Run (with internet)	~5 minutes	Model downloads & caching
+Subsequent Runs (offline)	20-40 seconds	18 documents processed
+Classification Accuracy	~95%	3-layer ensemble
+Average Confidence	0.69	Across all layers
+Search Index Build Time	<2 seconds	18 chunks
+Search Query Time	<10ms	FAISS exact match
+Memory Usage	~500 MB	Python + all models
+Disk Usage	~1.8 GB	Including all cached models
+
 
 ## Key Features
 
