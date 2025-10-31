@@ -1,5 +1,12 @@
 # Document Intelligence System
 
+
+<img width="947" height="436" alt="image" src="https://github.com/user-attachments/assets/8aa67a09-ec26-4182-8ac7-c0076f8248f8" />
+
+ [Demo Video](#-demo-video) | [Setup Guide](SETUP_GUIDE.md) | [Analysis](ANALYSIS.md)
+
+🎬 **[Watch Demo Video](https://drive.google.com/file/d/1HAGERLp_qef2R_ctPRYc3Xfqh2rFDsx2/view)**
+
 > **Enterprise-Grade Local AI for Document Classification, Extraction & Search**
 
 A high-performance, modular document processing pipeline that combines **rule-based logic, machine learning, and deep learning** to intelligently classify, extract structured data, and semantically search through documents—all running **locally on your machine**.
