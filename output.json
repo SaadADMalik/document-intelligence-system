@@ -1,0 +1,728 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-31T14:50:37.029628",
+    "pipeline_version": "1.0",
+    "total_documents": 20,
+    "successful_documents": 18,
+    "failed_documents": 2
+  },
+  "summary": {
+    "document_categories": {
+      "Invoice": 5,
+      "Other": 3,
+      "Resume": 5,
+      "Unclassifiable": 2,
+      "Utility Bill": 5
+    },
+    "avg_classification_confidence": 0.69,
+    "avg_extraction_confidence": 0.851,
+    "search_index": {
+      "status": "ready",
+      "total_chunks": 18,
+      "unique_documents": 18,
+      "embedding_dimension": 384,
+      "categories": {
+        "Invoice": 5,
+        "Other": 3,
+        "Resume": 5,
+        "Utility Bill": 5
+      },
+      "memory_mb": 0.0263671875
+    }
+  },
+  "documents": [
+    {
+      "filename": "invoice_1.pdf",
+      "text_length": 103,
+      "classification": {
+        "category": "Invoice",
+        "confidence": 0.7058644992441395,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.35714285714285715,
+          "tfidf": 0.6785886115646181,
+          "zero_shot": 0.9878626465797424
+        }
+      },
+      "extraction": {
+        "fields": {
+          "invoice_number": {
+            "value": "1001",
+            "confidence": 0.95
+          },
+          "date": {
+            "value": "2025-06-16",
+            "confidence": 0.9
+          },
+          "company": {
+            "value": "Pioneer Ltd Total Amount: $2073.00 Thank you for your business!",
+            "confidence": 0.95
+          },
+          "total_amount": {
+            "value": "$2073.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.9375
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "invoice_2.pdf",
+      "text_length": 103,
+      "classification": {
+        "category": "Invoice",
+        "confidence": 0.6747232383071546,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.35714285714285715,
+          "tfidf": 0.577350269189626,
+          "zero_shot": 0.9859382510185242
+        }
+      },
+      "extraction": {
+        "fields": {
+          "invoice_number": {
+            "value": "1002",
+            "confidence": 0.95
+          },
+          "date": {
+            "value": "2025-03-25",
+            "confidence": 0.9
+          },
+          "company": {
+            "value": "Pioneer Ltd Total Amount: $2996.00 Thank you for your business!",
+            "confidence": 0.95
+          },
+          "total_amount": {
+            "value": "$2996.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.9375
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "invoice_3.pdf",
+      "text_length": 102,
+      "classification": {
+        "category": "Invoice",
+        "confidence": 0.6791644995986585,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.35714285714285715,
+          "tfidf": 0.577350269189626,
+          "zero_shot": 0.9970414042472839
+        }
+      },
+      "extraction": {
+        "fields": {
+          "invoice_number": {
+            "value": "1003",
+            "confidence": 0.95
+          },
+          "date": {
+            "value": "2025-06-24",
+            "confidence": 0.9
+          },
+          "company": {
+            "value": "GlobalTech Total Amount: $4806.00 Thank you for your business!",
+            "confidence": 0.95
+          },
+          "total_amount": {
+            "value": "$4806.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.9375
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "invoice_4.pdf",
+      "text_length": 101,
+      "classification": {
+        "category": "Invoice",
+        "confidence": 0.6977768846058137,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.35714285714285715,
+          "tfidf": 0.6466060987504232,
+          "zero_shot": 0.991630494594574
+        }
+      },
+      "extraction": {
+        "fields": {
+          "invoice_number": {
+            "value": "1004",
+            "confidence": 0.95
+          },
+          "date": {
+            "value": "2025-03-26",
+            "confidence": 0.9
+          },
+          "company": {
+            "value": "Acme Corp Total Amount: $1955.00 Thank you for your business!",
+            "confidence": 0.95
+          },
+          "total_amount": {
+            "value": "$1955.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.9375
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "invoice_5.pdf",
+      "text_length": 109,
+      "classification": {
+        "category": "Invoice",
+        "confidence": 0.6789344733535414,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.35714285714285715,
+          "tfidf": 0.577350269189626,
+          "zero_shot": 0.996466338634491
+        }
+      },
+      "extraction": {
+        "fields": {
+          "invoice_number": {
+            "value": "1005",
+            "confidence": 0.95
+          },
+          "date": {
+            "value": "2025-06-10",
+            "confidence": 0.9
+          },
+          "company": {
+            "value": "Bright Future LLC Total Amount: $3612.00 Thank you for your business!",
+            "confidence": 0.95
+          },
+          "total_amount": {
+            "value": "$3612.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.9375
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "other_1.pdf",
+      "text_length": 139,
+      "classification": {
+        "category": "Other",
+        "confidence": 0.8366600265340757,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.07142857142857142,
+          "tfidf": 0.8366600265340757
+        }
+      },
+      "extraction": {
+        "fields": {
+          "note": {
+            "value": "Generic document - no specific extraction",
+            "confidence": 1.0
+          }
+        },
+        "confidence": 0.5
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "other_2.pdf",
+      "text_length": 139,
+      "classification": {
+        "category": "Other",
+        "confidence": 0.8366600265340757,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.07142857142857142,
+          "tfidf": 0.8366600265340757
+        }
+      },
+      "extraction": {
+        "fields": {
+          "note": {
+            "value": "Generic document - no specific extraction",
+            "confidence": 1.0
+          }
+        },
+        "confidence": 0.5
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "other_3.pdf",
+      "text_length": 139,
+      "classification": {
+        "category": "Other",
+        "confidence": 0.8366600265340757,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.07142857142857142,
+          "tfidf": 0.8366600265340757
+        }
+      },
+      "extraction": {
+        "fields": {
+          "note": {
+            "value": "Generic document - no specific extraction",
+            "confidence": 1.0
+          }
+        },
+        "confidence": 0.5
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "resume_1.pdf",
+      "text_length": 153,
+      "classification": {
+        "category": "Resume",
+        "confidence": 0.8376105968386144,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.46153846153846156,
+          "tfidf": 0.8376105968386144
+        }
+      },
+      "extraction": {
+        "fields": {
+          "name": {
+            "value": "John Doe Email",
+            "confidence": 0.85
+          },
+          "email": {
+            "value": "john.doe@example.com",
+            "confidence": 0.95
+          },
+          "phone": {
+            "value": "+1-555-799-6125",
+            "confidence": 0.9
+          },
+          "experience_years": {
+            "value": "5",
+            "confidence": 0.9
+          }
+        },
+        "confidence": 0.8999999999999999
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "resume_2.pdf",
+      "text_length": 157,
+      "classification": {
+        "category": "Resume",
+        "confidence": 0.5074732145816907,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.46153846153846156,
+          "tfidf": 0.6968731476445666,
+          "zero_shot": 0.39987432956695557
+        }
+      },
+      "extraction": {
+        "fields": {
+          "name": {
+            "value": "Jane Smith",
+            "confidence": 0.85
+          },
+          "email": {
+            "value": "jane.smith@example.com",
+            "confidence": 0.95
+          },
+          "phone": {
+            "value": "+1-555-486-5877",
+            "confidence": 0.9
+          },
+          "experience_years": {
+            "value": "1",
+            "confidence": 0.9
+          }
+        },
+        "confidence": 0.8999999999999999
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "resume_3.pdf",
+      "text_length": 153,
+      "classification": {
+        "category": "Resume",
+        "confidence": 0.5341236671955213,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.46153846153846156,
+          "tfidf": 0.6968731476445666,
+          "zero_shot": 0.466500461101532
+        }
+      },
+      "extraction": {
+        "fields": {
+          "name": {
+            "value": "Ali Khan",
+            "confidence": 0.85
+          },
+          "email": {
+            "value": "ali.khan@example.com",
+            "confidence": 0.95
+          },
+          "phone": {
+            "value": "+1-555-980-6266",
+            "confidence": 0.9
+          },
+          "experience_years": {
+            "value": "4",
+            "confidence": 0.9
+          }
+        },
+        "confidence": 0.8999999999999999
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "resume_4.pdf",
+      "text_length": 161,
+      "classification": {
+        "category": "Resume",
+        "confidence": 0.5085414847881421,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.46153846153846156,
+          "tfidf": 0.6968731476445666,
+          "zero_shot": 0.4025450050830841
+        }
+      },
+      "extraction": {
+        "fields": {
+          "name": {
+            "value": "Maria Garcia Email",
+            "confidence": 0.85
+          },
+          "email": {
+            "value": "maria.garcia@example.com",
+            "confidence": 0.95
+          },
+          "phone": {
+            "value": "+1-555-233-1405",
+            "confidence": 0.9
+          },
+          "experience_years": {
+            "value": "1",
+            "confidence": 0.9
+          }
+        },
+        "confidence": 0.8999999999999999
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "resume_5.pdf",
+      "text_length": 155,
+      "classification": {
+        "category": "Resume",
+        "confidence": 0.5497317156345471,
+        "method": "Layer3_Ensemble",
+        "layer_scores": {
+          "rule_based": 0.46153846153846156,
+          "tfidf": 0.6968731476445666,
+          "zero_shot": 0.5055205821990967
+        }
+      },
+      "extraction": {
+        "fields": {
+          "name": {
+            "value": "David Lee Email",
+            "confidence": 0.85
+          },
+          "email": {
+            "value": "david.lee@example.com",
+            "confidence": 0.95
+          },
+          "phone": {
+            "value": "+1-555-305-2284",
+            "confidence": 0.9
+          },
+          "experience_years": {
+            "value": "2",
+            "confidence": 0.9
+          }
+        },
+        "confidence": 0.8999999999999999
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "unclassifiable_1.pdf",
+      "text_length": 0,
+      "classification": {
+        "category": "Unclassifiable",
+        "confidence": 1.0,
+        "method": "error",
+        "layer_scores": {}
+      },
+      "extraction": {
+        "fields": {},
+        "confidence": 0.0
+      },
+      "processing": {
+        "error": "Corrupted PDF file (PDFSyntaxError)",
+        "chunks": 0
+      }
+    },
+    {
+      "filename": "unclassifiable_2.pdf",
+      "text_length": 0,
+      "classification": {
+        "category": "Unclassifiable",
+        "confidence": 1.0,
+        "method": "error",
+        "layer_scores": {}
+      },
+      "extraction": {
+        "fields": {},
+        "confidence": 0.0
+      },
+      "processing": {
+        "error": "Corrupted PDF file (PDFSyntaxError)",
+        "chunks": 0
+      }
+    },
+    {
+      "filename": "utilitybill_1.pdf",
+      "text_length": 116,
+      "classification": {
+        "category": "Utility Bill",
+        "confidence": 0.7088372003819962,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.6153846153846154,
+          "tfidf": 0.7088372003819962
+        }
+      },
+      "extraction": {
+        "fields": {
+          "account_number": {
+            "value": "ACC-49575",
+            "confidence": 0.95
+          },
+          "billing_date": {
+            "value": "2025-05-24",
+            "confidence": 0.9
+          },
+          "usage_kwh": {
+            "value": "406 kWh",
+            "confidence": 0.9
+          },
+          "amount_due": {
+            "value": "$193.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.925
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "utilitybill_2.pdf",
+      "text_length": 116,
+      "classification": {
+        "category": "Utility Bill",
+        "confidence": 0.7088372003819962,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.6153846153846154,
+          "tfidf": 0.7088372003819962
+        }
+      },
+      "extraction": {
+        "fields": {
+          "account_number": {
+            "value": "ACC-55530",
+            "confidence": 0.95
+          },
+          "billing_date": {
+            "value": "2025-02-12",
+            "confidence": 0.9
+          },
+          "usage_kwh": {
+            "value": "855 kWh",
+            "confidence": 0.9
+          },
+          "amount_due": {
+            "value": "$622.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.925
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "utilitybill_3.pdf",
+      "text_length": 116,
+      "classification": {
+        "category": "Utility Bill",
+        "confidence": 0.7088372003819962,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.6153846153846154,
+          "tfidf": 0.7088372003819962
+        }
+      },
+      "extraction": {
+        "fields": {
+          "account_number": {
+            "value": "ACC-33934",
+            "confidence": 0.95
+          },
+          "billing_date": {
+            "value": "2025-06-12",
+            "confidence": 0.9
+          },
+          "usage_kwh": {
+            "value": "558 kWh",
+            "confidence": 0.9
+          },
+          "amount_due": {
+            "value": "$345.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.925
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "utilitybill_4.pdf",
+      "text_length": 116,
+      "classification": {
+        "category": "Utility Bill",
+        "confidence": 0.7088372003819962,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.6153846153846154,
+          "tfidf": 0.7088372003819962
+        }
+      },
+      "extraction": {
+        "fields": {
+          "account_number": {
+            "value": "ACC-77424",
+            "confidence": 0.95
+          },
+          "billing_date": {
+            "value": "2025-04-25",
+            "confidence": 0.9
+          },
+          "usage_kwh": {
+            "value": "384 kWh",
+            "confidence": 0.9
+          },
+          "amount_due": {
+            "value": "$402.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.925
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    },
+    {
+      "filename": "utilitybill_5.pdf",
+      "text_length": 116,
+      "classification": {
+        "category": "Utility Bill",
+        "confidence": 0.7088372003819962,
+        "method": "Layer2_TFIDF",
+        "layer_scores": {
+          "rule_based": 0.5384615384615384,
+          "tfidf": 0.7088372003819962
+        }
+      },
+      "extraction": {
+        "fields": {
+          "account_number": {
+            "value": "ACC-41029",
+            "confidence": 0.95
+          },
+          "billing_date": {
+            "value": "2025-06-11",
+            "confidence": 0.9
+          },
+          "usage_kwh": {
+            "value": "871 kWh",
+            "confidence": 0.9
+          },
+          "amount_due": {
+            "value": "$127.00",
+            "confidence": 0.95
+          }
+        },
+        "confidence": 0.925
+      },
+      "processing": {
+        "error": null,
+        "chunks": 1
+      }
+    }
+  ]
+}
