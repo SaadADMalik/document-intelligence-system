@@ -1,0 +1,21 @@
+﻿# PDF Processing
+PyPDF2==3.0.1
+pdfminer.six==20221105
+
+# NLP & Named Entity Recognition
+spacy==3.7.2
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+
+# Machine Learning & Classification
+transformers==4.36.2
+torch==2.1.2
+scikit-learn==1.3.2
+
+# Semantic Search
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+
+# Utilities
+numpy==1.24.3
+pandas==2.1.4
+python-dateutil==2.8.2
